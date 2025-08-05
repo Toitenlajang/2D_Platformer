@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1913e5de5929c6648a74558cb34488f0, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  movementVelocity: 10
+  jumpVelocity: 10
+  amountOfJumps: 2
+  coyoteTime: 0.2
+  wallSlideVelocity: 2
+  wallClimbVelocity: 3
+  wallJumpVelocity: 13
+  wallJumpTime: 0.4
+  wallJumpAngle: {x: 2, y: 3}
+  startOffSet: {x: 0.4, y: 0.9}
+  stopOffSet: {x: 0.5, y: 1}
+  dashCoolDown: 0.5
+  dashTime: 0.2
+  dashVelocity: 25
+  dashEndYMultiplier: 0.2
+  distBetweenAfterImages: 0.7
+  crouchMovementVelocity: 5
+  crouchColliderHeight: 1.3
+  standColliderHeight: 1.83
