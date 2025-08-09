@@ -104,7 +104,6 @@
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerWallGrabState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FE_FlyingState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_LookForPlayerState.cs" />
-    <Compile Include="Assets\_Scripts\SoundManager\SoundManager.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy2\E2_DetectedState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy2\E2_DeadState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_MeleeAttack.cs" />
@@ -121,17 +120,20 @@
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy2\E2_RangedAttackState.cs" />
     <Compile Include="Assets\_Scripts\Interfaces\ILogicUpdate.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FlyingEnemy.cs" />
+    <Compile Include="Assets\_Scripts\GameManager\SoundManager.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_MoveState.cs" />
     <Compile Include="Assets\_Scripts\Core\CoreComponent\CollisionSenses.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_RangedAttackState.cs" />
     <Compile Include="Assets\_Scripts\Events\CharacterEvents.cs" />
     <Compile Include="Assets\_Scripts\Weapons\Weapon.cs" />
+    <Compile Include="Assets\_Scripts\GameManager\SoundEffectLibrary.cs" />
     <Compile Include="Assets\_Scripts\UI\MenuController.cs" />
     <Compile Include="Assets\_Scripts\AfterImage\PlayerAfterImageSprite.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy1\Enemy1.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\Enemy3.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FE_ChargeState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_DamagedState.cs" />
+    <Compile Include="Assets\_Scripts\GameManager\SceneController.cs" />
     <Compile Include="Assets\_Scripts\Enemy\CombatTest.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerWallJumpState.cs" />
     <Compile Include="Assets\_Scripts\Interfaces\IKnockbackable.cs" />
@@ -157,6 +159,7 @@
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_IdleState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerCrouchMoveState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\Collider Detection\CloseRangeDetector.cs" />
+    <Compile Include="Assets\_Scripts\GameManager\FinishPoint.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SuperState\PlayerOnWallState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SuperState\PlayerAbilityState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\Collider Detection\MinRangeDetector.cs" />
@@ -166,7 +169,6 @@
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FE_LookForPlayerState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\IdleState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy1\E1_DamagedState.cs" />
-    <Compile Include="Assets\_Scripts\SoundManager\SoundEffectLibrary.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_DetectedState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerJumpState.cs" />
   </ItemGroup>
