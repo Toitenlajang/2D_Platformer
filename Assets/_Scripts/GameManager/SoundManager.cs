@@ -8,6 +8,9 @@ public enum Soundtype
     FOOTSTEPS,
     JUMP,
     LAND,
+    DASH,
+    CLIMB,
+    SLIDE,
     PUNCH,
     SWORD,
     HURT,
@@ -15,50 +18,21 @@ public enum Soundtype
 [RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
 {
-    private static SoundManager Instance;
-
-    private static AudioSource audioSource;
-    private static SoundEffectLibrary soundEffectLibrary;
-
-    [SerializeField]
-    private Slider sfxSlider; 
+    [SerializeField] private AudioClip[] soundList;
+    private static SoundManager instance;
+    private AudioSource audioSource;
 
     private void Awake()
     {
-        if(Instance == null)
-        {
-            Instance = this;
-
-            audioSource = GetComponent<AudioSource>();
-            soundEffectLibrary = GetComponent<SoundEffectLibrary>();
-
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        instance = this;
     }
     private void Start()
     {
-        sfxSlider.onValueChanged.AddListener(delegate { OnValueChanged(); });
+        audioSource = GetComponent<AudioSource>();
     }
-
-    public static void Play(string soundName)
+    public static void Playsound(Soundtype sound, float volume = 1)
     {
-        AudioClip audioClip = soundEffectLibrary.GetRandomSound(soundName);
-
-        if(audioClip != null)
-        {
-            audioSource.PlayOneShot(audioClip);
-        }
+        instance.audioSource.PlayOneShot(instance.soundList[(int)sound], volume);
     }
-    public static void SetVolume(float volume)
-    {
-        audioSource.volume = volume;
-    }
-    public void OnValueChanged()
-    {
-        SetVolume(sfxSlider.value);
-    }
+    
 }

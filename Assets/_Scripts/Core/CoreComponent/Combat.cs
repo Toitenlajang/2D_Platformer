@@ -25,6 +25,13 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable
     {
         CheckKnockback();
     }
+
+    //expose the needed functionality via public property
+    public Stats GetStats()
+    {
+        return core.Stats;
+    }
+
     public void Damage(float amount)
     {
         Debug.Log(core.transform.parent.name + " get hit " + amount + " damaged! ");
@@ -40,7 +47,6 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable
         {
             var attackDetails = new AttackDetails
             {
-                //position = core.transform.position,
                 damageAmount = amount
             };
             entity.Damage(attackDetails);
@@ -50,7 +56,6 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable
         {
             var attackDetails = new AttackDetails
             {
-                //position = core.transform.position,
                 damageAmount = amount
             };
             player.Damage(attackDetails);

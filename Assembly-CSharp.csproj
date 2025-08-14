@@ -82,6 +82,7 @@
     <Compile Include="Assets\_Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerWallSlideState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerFiniteStateMachine\Player.cs" />
+    <Compile Include="Assets\_Scripts\Others\PlaySoundEnter.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy1\E1_DeadState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerFiniteStateMachine\PlayerState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerCrouchIdleState.cs" />
@@ -126,7 +127,7 @@
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_RangedAttackState.cs" />
     <Compile Include="Assets\_Scripts\Events\CharacterEvents.cs" />
     <Compile Include="Assets\_Scripts\Weapons\Weapon.cs" />
-    <Compile Include="Assets\_Scripts\GameManager\SoundEffectLibrary.cs" />
+    <Compile Include="Assets\_Scripts\Others\PlaySoundExit.cs" />
     <Compile Include="Assets\_Scripts\UI\MenuController.cs" />
     <Compile Include="Assets\_Scripts\AfterImage\PlayerAfterImageSprite.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy1\Enemy1.cs" />
@@ -162,6 +163,7 @@
     <Compile Include="Assets\_Scripts\GameManager\FinishPoint.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SuperState\PlayerOnWallState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SuperState\PlayerAbilityState.cs" />
+    <Compile Include="Assets\_Scripts\UI\HealthPickUp.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\Collider Detection\MinRangeDetector.cs" />
     <Compile Include="Assets\_Scripts\Core\CoreComponent\Movement.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy2\E2_MoveState.cs" />

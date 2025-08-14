@@ -62,15 +62,6 @@ public class PlayerInputHandler : MonoBehaviour
 
         InputX = (int)(MovementInput * Vector2.right).x;
         InputY = (int)(MovementInput * Vector2.up).y;
-
-        if (context.started)
-        {
-            StartingFootSteps();
-        }
-        else if(context.canceled && !MenuController.IsMenuOpen && !IsGrounded)
-        {
-            StopFootSteps();
-        }
     }
     public void OnJumpInput(InputAction.CallbackContext context)
     {
@@ -109,22 +100,6 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void UseJumpInput() => JumpInput = false;
     public void UseDashInput() => DashInput = false;
-
-    public void StartingFootSteps()
-    {
-        playingFootSteps = true;
-        InvokeRepeating(nameof(PlayFootStep), 0f, footStepsSpeed);
-        
-    }
-    public void PlayFootStep()
-    {
-        SoundManager.Play("FootSteps");
-    }
-    public void StopFootSteps()
-    {
-        playingFootSteps = false;
-        CancelInvoke(nameof(PlayFootStep));
-    }
    
 }
 

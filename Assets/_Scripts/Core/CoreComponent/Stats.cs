@@ -27,7 +27,9 @@ public class Stats : CoreComponent
 
     public void IncreaseHealth(float amount)
     {
+
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        CharacterEvents.characterHealed.Invoke(gameObject, amount);
     }
 
 }

@@ -10,6 +10,8 @@ public class MenuController : MonoBehaviour
     {
         menuCanvas.SetActive(false);
         Time.timeScale = 1f;
+        IsMenuOpen = false;
+
     }
     private void Update()
     {
