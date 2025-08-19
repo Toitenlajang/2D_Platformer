@@ -128,7 +128,9 @@ public class Player : MonoBehaviour
         if (stats.currentHealth <= 0)
         {
             isDead = true;
+
             Debug.Log("player is dead");
+            MenuController.Instance.GameOver();
         }
 
         if (isDamaged)

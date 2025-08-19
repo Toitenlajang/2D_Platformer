@@ -137,6 +137,7 @@
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_DamagedState.cs" />
     <Compile Include="Assets\_Scripts\GameManager\SceneController.cs" />
     <Compile Include="Assets\_Scripts\Enemy\CombatTest.cs" />
+    <Compile Include="Assets\_Scripts\UI\GameOverScreen.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerWallJumpState.cs" />
     <Compile Include="Assets\_Scripts\Interfaces\IKnockbackable.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FE_DamagedState.cs" />
