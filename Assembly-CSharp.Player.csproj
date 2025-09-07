@@ -74,6 +74,7 @@
     <Compile Include="Assets\_Scripts\ScriptableObject\Weapon\SO_WeaponData.cs" />
     <Compile Include="Assets\_Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerWallClimbState.cs" />
+    <Compile Include="Assets\_Scripts\Others\PlaySound.cs" />
     <Compile Include="Assets\_Scripts\Objects\Spike.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FE_DetectedState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerMoveState.cs" />

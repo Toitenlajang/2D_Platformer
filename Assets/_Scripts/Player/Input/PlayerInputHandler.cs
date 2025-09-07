@@ -70,6 +70,7 @@ public class PlayerInputHandler : MonoBehaviour
 
         if (context.started)
         {
+            SoundManager.Playsound(Soundtype.JUMP);
             JumpInput = true;
         }
     }
