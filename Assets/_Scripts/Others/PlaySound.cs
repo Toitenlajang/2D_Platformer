@@ -6,6 +6,6 @@ public class PlaySound : MonoBehaviour
 {
     public void PlayStep()
     {
-        SoundManager.Playsound(Soundtype.FOOTSTEPS,0.5f);
+        SoundManager.Playsound(Soundtype.PLAYER_FOOTSTEPS, 0.1f);
     }
 }

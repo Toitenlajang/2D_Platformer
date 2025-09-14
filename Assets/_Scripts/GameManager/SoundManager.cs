@@ -7,16 +7,28 @@ using UnityEngine.UIElements;
 
 public enum Soundtype
 {
-    FOOTSTEPS,
-    JUMP,
-    LAND,
-    DASH,
-    CLIMB,
-    SLIDE,
-    PUNCH,
-    SWORD,
-    HURT,
-    DEAD,
+    // Player Sounds
+    PLAYER_FOOTSTEPS,
+    PLAYER_JUMP,
+    PLAYER_LAND,
+    PLAYER_DASH,
+    PLAYER_CLIMB,
+    PLAYER_SLIDE,
+    PLAYER_PUNCH,
+    PLAYER_SWORD,
+    PLAYER_HURT,
+    PLAYER_DEAD,
+
+    // Enemy Sounds
+
+    // Item Sounds
+
+    // Background Music
+    BG_Plain,
+    BG_Cave,
+    BG_Forest
+
+    // UI Sounds
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour
@@ -40,6 +52,7 @@ public class SoundManager : MonoBehaviour
 
         instance.audioSource.PlayOneShot(randomClip, volume);
     }
+
 #if UNITY_EDITOR
     private void OnEnable()
     {
@@ -56,6 +69,7 @@ public class SoundManager : MonoBehaviour
     public struct SoundList
     {
         public AudioClip[] Sounds { get => sounds; }
+
         [HideInInspector] public string name;
         [SerializeField] private AudioClip[] sounds;
     }
