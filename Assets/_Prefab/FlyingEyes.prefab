@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 4297501484278562703}
   - component: {fileID: 8338970828793603709}
   m_Layer: 7
-  m_Name: FlyingEnemy
+  m_Name: FlyingEyes
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
