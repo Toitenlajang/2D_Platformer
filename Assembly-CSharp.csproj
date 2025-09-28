@@ -110,6 +110,7 @@
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy2\E2_DetectedState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy2\E2_DeadState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_MeleeAttack.cs" />
+    <Compile Include="Assets\_Scripts\UI\MainMenu.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy1\E1_LookForPlayerState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_FlyingStateData.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FE_MeleeAttackState.cs" />
