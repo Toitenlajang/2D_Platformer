@@ -121,6 +121,7 @@
     <Compile Include="Assets\_Scripts\Enemy\StateMachine\FiniteStateMachine.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerIdleState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FE_DeadState.cs" />
+    <Compile Include="Assets\_Scripts\Others\ParallaxMenu.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy2\E2_RangedAttackState.cs" />
     <Compile Include="Assets\_Scripts\Interfaces\ILogicUpdate.cs" />
     <Compile Include="Assets\_Scripts\Enemy\FlyingEnemy\FlyingEnemy.cs" />
