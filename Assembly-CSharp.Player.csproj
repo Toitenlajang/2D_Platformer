@@ -67,6 +67,7 @@
     <Compile Include="Assets\_Scripts\Enemy\State\MoveState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\LookForPlayerState.cs" />
     <Compile Include="Assets\_Scripts\Core\CoreComponent\CoreComponent.cs" />
+    <Compile Include="Assets\_Scripts\GameManager\MusicManager.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerInAirState.cs" />
     <Compile Include="Assets\_Scripts\UI\TabController.cs" />
     <Compile Include="Assets\_Scripts\Core\CoreComponent\Combat.cs" />

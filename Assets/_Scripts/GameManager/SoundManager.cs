@@ -23,11 +23,6 @@ public enum Soundtype
 
     // Item Sounds
 
-    // Background Music
-    BG_Plain,
-    BG_Cave,
-    BG_Forest
-
     // UI Sounds
 }
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
