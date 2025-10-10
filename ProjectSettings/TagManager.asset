@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - MinRange
   - CloseRange
+  - MusicSlider
   layers:
   - Default
   - TransparentFX

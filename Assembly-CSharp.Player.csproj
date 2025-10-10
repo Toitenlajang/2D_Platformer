@@ -161,6 +161,7 @@
     <Compile Include="Assets\_Scripts\Player\PlayerState\SubState\PlayerDeadState.cs" />
     <Compile Include="Assets\_Scripts\Projectiles\Projectiles.cs" />
     <Compile Include="Assets\_Scripts\Enemy\SpecificEnemy\Enemy1\E1_DetectedState.cs" />
+    <Compile Include="Assets\_Scripts\GameManager\SceneMusicData.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerState\SuperState\PlayerGroundedState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\AttackState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\State\Data\D_IdleState.cs" />

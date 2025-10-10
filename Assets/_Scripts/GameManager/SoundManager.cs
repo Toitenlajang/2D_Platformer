@@ -31,6 +31,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private SoundList[] soundList;
     private static SoundManager instance;
     private AudioSource audioSource;
+    [SerializeField] private UnityEngine.UI.Slider musicSlider;
 
     private void Awake()
     {
@@ -39,6 +40,12 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+
+        
+    }
+    public static void SetVolume(float volume)
+    {
+        instance.audioSource.volume = volume;
     }
     public static void Playsound(Soundtype sound, float volume = 1)
     {

@@ -289,6 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 140290325906575042}
   - component: {fileID: 6726751267500987532}
+  - component: {fileID: 7834896420476841501}
   m_Layer: 0
   m_Name: Music Manager
   m_TagString: Untagged
@@ -323,7 +324,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -407,6 +408,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7834896420476841501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214204264962300341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1edd4ec3c187a479190097c9284f07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 8300000, guid: 413c2b73532782e4e82884c7d0d565bd, type: 3}
+  musicSlider: {fileID: 0}
 --- !u!1 &8056772234632100538
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,12 +495,6 @@ MonoBehaviour:
   - name: PLAYER_DEAD
     sounds:
     - {fileID: 8300000, guid: 5458b53d8b1fde14aa4b7278ef70c595, type: 3}
-  - name: BG_Plain
-    sounds: []
-  - name: BG_Cave
-    sounds: []
-  - name: BG_Forest
-    sounds: []
 --- !u!82 &3190968797152052114
 AudioSource:
   m_ObjectHideFlags: 0
