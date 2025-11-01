@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a1ee02342397542a3761bde1ba7ec3, type: 3}
   m_Name: E1_DetectedData
   m_EditorClassIdentifier: 
-  longRangeActionTime: 0.5
+  chargeActionTime: 0.5

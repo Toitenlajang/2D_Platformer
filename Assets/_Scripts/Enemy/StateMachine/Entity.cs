@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.Processors;
 
-public class Entity : MonoBehaviour
+public class Entity : MonoBehaviour, IDamageable
 {
     public FiniteStateMachine stateMachine;
     public D_Entity entityData;
@@ -67,16 +67,19 @@ public class Entity : MonoBehaviour
     }
     public virtual void Damage(AttackDetails attackDetails)
     {
-        stats.DecreaseHealth(attackDetails.damageAmount);
+        Damage(attackDetails.damageAmount);
+    }
+    public virtual void Damage(float amount)
+    {
+        stats.DecreaseHealth(amount);
 
         isDamaged = true;
-        if(stats.currentHealth <= 0)
+        if (stats.currentHealth <= 0)
         {
             isDead = true;
             Debug.Log("enemy is dead");
         }
     }
-
     public void StartCoroutineFromState(IEnumerator routine)
     {
         StartCoroutine(routine);

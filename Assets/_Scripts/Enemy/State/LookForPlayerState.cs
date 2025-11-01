@@ -9,6 +9,7 @@ public class LookForPlayerState : State
     protected bool isDamaged;
     protected bool turnImmediately;
     protected bool isPlayerInMinRange;
+    protected bool isPlayerInMaxRange;
     protected bool isAllTurnsDone;
     protected bool isAllTurnsTimeDone;
 
@@ -24,6 +25,7 @@ public class LookForPlayerState : State
         base.DoChecks();
 
         isPlayerInMinRange = entity.CheckPlayerInMinRange();
+        isPlayerInMaxRange =  entity.CheckPlayerInMaxRange();
     }
 
     public override void Enter()

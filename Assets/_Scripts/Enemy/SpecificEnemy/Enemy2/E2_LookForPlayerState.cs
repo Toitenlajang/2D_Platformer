@@ -35,7 +35,7 @@ public class E2_LookForPlayerState : LookForPlayerState
         }
         else if (isAllTurnsTimeDone)
         {
-            stateMachine.ChangeState(enemy.DetectedState);
+            stateMachine.ChangeState(enemy.MoveState);
         }
         else if (isDamaged)
         {

@@ -5,7 +5,6 @@ using UnityEngine;
 public class CollisionSenses : CoreComponent
 {
     #region Check Transforms
-
     public Transform GroundCheck 
     {
         get => GenericNotImplementedError<Transform>.TryGet(groundCheck, transform.parent.name);

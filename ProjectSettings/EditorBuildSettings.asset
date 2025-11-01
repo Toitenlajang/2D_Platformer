@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Dark Cave.unity
     guid: c11aa27e77212cc4db3f31b1b01f40fc
+  - enabled: 1
+    path: Assets/_Scenes/Plain.unity
+    guid: e95ecb66e3ff635479ca439ae9d9be5d
   m_configObjects: {}

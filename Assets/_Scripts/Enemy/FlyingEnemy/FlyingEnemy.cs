@@ -7,11 +7,6 @@ public class FlyingEnemy : Entity
     public List<Transform> wayPoints;
     public List<Transform> WayPoints => wayPoints;
 
-
-    //[SerializeField]
-    //private float maxHealth = 25f;
-    //protected override float MaxHealth => maxHealth;
-
     public FE_FlyingState FlyingState { get; private set; }
     public FE_DetectedState DetectedState { get; private set; }
     public FE_ChargeState ChargeState { get; private set; }
@@ -94,12 +89,6 @@ public class FlyingEnemy : Entity
         Debug.Log("[FlyingEnemy] Player exited Close Range.");
     }
     #endregion
-
-
-    public override void OnDrawGizmos()
-    {
-        
-    }
     public override void Damage(AttackDetails attackDetails)
     {
         base.Damage(attackDetails);

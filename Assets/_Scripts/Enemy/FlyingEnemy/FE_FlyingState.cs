@@ -33,8 +33,6 @@ public class FE_FlyingState : State
 
     #endregion
 
-    
-
     public override void DoChecks()
     {
         base.DoChecks();
@@ -59,7 +57,6 @@ public class FE_FlyingState : State
     public override void Exit()
     {
         base.Exit();
-
     }
 
     public override void LogicUpdate()
@@ -86,6 +83,7 @@ public class FE_FlyingState : State
 
     }
 
+    #region Flying Logic Functions
     public void Flight()
     {
         //fly to the next waypoint
@@ -110,8 +108,6 @@ public class FE_FlyingState : State
             nextWayPoint = enemy.wayPoints[wayPointNum];
         }
     }
-
-    #region Flying Logic Functions
 
     private void SetInitialDirection()
     {
@@ -138,8 +134,6 @@ public class FE_FlyingState : State
             FlipDirection();
         }
 
-        // Vertical obstacle avoidance
-        //HandleVerticalAvoidance();
     }
     private void FlipDirection()
     {

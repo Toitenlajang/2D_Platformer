@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Enemy2 : Entity
 {
-    //[SerializeField]
-    //private float maxHealth = 25f;
-    //protected override float MaxHealth => maxHealth;
-
     public E2_IdleState IdleState { get; private set; }
     public E2_MoveState MoveState { get; private set; }
     public E2_DetectedState DetectedState { get; private set; }
